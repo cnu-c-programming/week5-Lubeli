@@ -3,7 +3,8 @@
 void double_elements(int* arr, int a){
     int *ptr = arr; int ptr = *ptr * 2;
     for(int i = 0; i< a; i++){
-        *(ptr + i) *= 2;
+       *ptr = *ptr * 2;
+       ptr++;
     }
 }
 
